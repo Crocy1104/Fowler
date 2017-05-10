@@ -4,12 +4,12 @@ import java.util.*;
 
 class Customer {
     private String name;
-    private Vector rentals = new Vector();
+    private List<Rental> rentals = new ArrayList<Rental>();
     public Customer (String name){
         this.name = name;
     }
     public void addRental(Rental arg) {
-        this.rentals.addElement(arg);
+        this.rentals.add(arg);
         
     }
     public String getName (){
